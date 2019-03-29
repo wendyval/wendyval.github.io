@@ -244,6 +244,123 @@ h1 a {
     text-shadow: -2.5px 2px 0 #A93200;
 }
 
+/************************************* PORTFOLIO PAGE ************************************/
+/* Below is for the section content */
+section.portfolio-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 100px 0 80px;
+}
+
+section.portfolio-details h2 {
+    font: 300 20px 'Overpass', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+    color: #A93200;
+    background: linear-gradient(0deg, #DA9D83 50%, transparent 50%);
+}
+
+section.portfolio-details p {
+    font: 300 17px 'Overpass', sans-serif;
+    color: #000;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+/* Below is for the main project content */
+div.container {
+    background-color: #FBF9F7;
+    padding: 80px 0 0;
+    margin: 0;
+}
+
+div.wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+main.projects {
+    text-align: center;
+    width: 100%;
+}
+
+main section.card {
+    margin: 2%;
+    width: 45%;
+    position: relative;
+    display: inline-block;
+}
+
+main section.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+main section.card a.card-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    height: 100%;
+    width: 100%;
+
+    opacity: 0;
+    text-decoration: none;
+}
+
+section.card a.card-overlay:hover {
+    opacity: 1;
+    transition: .4s ease;
+    background-color: #EFE3DD;
+  }
+
+a.card-overlay div {
+    color: #DA9D83;
+    font: 700 20px 'Poppins', sans-serif;
+
+    letter-spacing: 2px;
+
+    position: absolute;
+    text-align: center;
+     
+    top: 50%;
+    left: 50%;
+
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    
+}
+
+/* Below is for the portfolio footer content */
+footer.portfolio-footer {
+    width: 85%;
+    padding: 60px 0 20px;
+    margin: 0 auto;
+    text-align: center;
+    color: #DA9D83;
+    font: 300 16px 'Overpass', sans-serif;
+    letter-spacing: 1px;
+}
+
+footer.portfolio-footer p {
+    margin: 0;
+    padding-top: 10px;
+}
+
+footer.portfolio-footer hr {
+    height: 1px;
+    background-color: #DA9D83;
+    border: none;
+}
+
 /***************************** ABOUT PAGE *****************************/
 /* Below is for the section content for the about page and each project page */
 section.main-details {
