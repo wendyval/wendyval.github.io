@@ -1,0 +1,82 @@
+html {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    background-color: #F7F2EF;
+}
+
+/* Below is for the navigation */
+.overlay-nav ul li {
+    position: fixed;
+    z-index: 1;
+    list-style: none;
+}
+
+.overlay-nav ul li a {
+    text-decoration: none;
+    font: 18px 'Overpass', sans-serif;
+    color: #A93200;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+a.about {
+    -webkit-transform: rotate(-90deg);
+        -moz-tranform: rotate(-90deg);
+            transform: rotate(-90deg);
+
+    left: 2%;
+    top: 48%;
+    position: fixed;
+
+    display: flex;
+    align-items: center;
+}
+
+a.contact {
+    -webkit-transform: rotate(90deg);
+        -moz-tranform: rotate(90deg);
+            transform: rotate(90deg);
+
+    right: 2%;
+    top: 48%;
+    position: fixed;
+
+    display: flex;
+    align-items: center; 
+}
+
+a.portfolio {
+    left: 0;
+    right: 0;
+    bottom: 7%;
+    position: fixed;
+
+    width: 115px;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    align-items: center; 
+}
+
+/* Below will create the underline when hovered over */
+.overlay-container ul li a:hover:after, 
+.overlay-container ul li a:focus:after,
+.overlay-container ul li a:active:after {
+    width: 100%;
+}
+
+.overlay-container ul li a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    height: 2px;
+    background: #A93200;
+    transition: .35s;
+}
