@@ -540,3 +540,72 @@ section.b {
         opacity: 1; 
     }
 }
+
+/* Media Queries */
+@media screen and (max-width: 991px) {
+    main section.card {
+      margin: 2%;
+      width: 90%;
+    }
+
+    main.about-main section {
+        width: 85%;
+        margin-top: 15px;
+    }
+
+    section.portfolio-details p {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    section.main-details p {
+        width: 85%;
+    }
+
+    section .contact-links {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    header {
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    h1.logo {
+        font-size: 25px;
+        margin-left: 37px;
+        position: absolute;
+    }
+
+    .nav-button {
+        position: absolute;
+    }
+
+    section.portfolio-details, main div.container {
+        position: static;
+    }
+
+    section.portfolio-details p {
+        width: 85%;
+    }
+    /* 2nd */
+    section.main-details p {
+        width: 80%;
+    }
+
+    
+
+    main.about-main section {
+        width: 85%;
+        margin: 35px auto 0;
+    }
+
+    div.skills-info ul li {
+        padding-bottom: 12px;
+    }
+}
