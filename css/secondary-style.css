@@ -455,3 +455,48 @@ section.extra-info div:nth-of-type(1) {
 section.work-exp p:nth-of-type(1), .work-exp p:nth-of-type(2) {
     margin-bottom: 7px;
 } 
+
+/************************************* EACH PROJECT PAGE ************************************/
+.img-cont {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-cont img {
+    margin: 2%;
+    width: 85%;
+}
+
+.design-projects {
+    width: 50%;
+}
+
+#indesign-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#indesign-img:hover {
+    opacity: 0.9;
+    transition: .4s ease;
+}
+
+/* footer - for the about page and each project page */
+footer {
+    width: 85%;
+    margin: 60px auto 10px;
+    text-align: center;
+    color: #DA9D83;
+    font: 300 16px 'Overpass', sans-serif;
+    letter-spacing: 1px;
+}
+
+footer hr {
+    height: 1px;
+    background-color: #DA9D83;
+    border: none;
+}
