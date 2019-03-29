@@ -500,3 +500,43 @@ footer hr {
     background-color: #DA9D83;
     border: none;
 }
+
+/* Animation */
+main section {
+    opacity: 0;
+    transform: translate(0, 80px);
+    transition: all 1s; 
+}
+
+main section.visible { 
+    opacity: 1;
+    transform: translate(0, 0);
+} 
+
+section.a {
+    animation: fadeIn 1.25s .6s both;
+}
+  
+section.b {
+    animation: fadeIn 1.25s 1.25s both;
+}
+
+@-webkit-keyframes fadeIn {
+    0% { 
+        opacity: 0;
+    }
+
+    100% { 
+        opacity: 1; 
+    }
+}
+
+@keyframes fadeIn {
+    0% { 
+        opacity: 0;
+    }
+
+    100% { 
+        opacity: 1; 
+    }
+}
