@@ -377,6 +377,7 @@ section.main-details h2 {
     font: 300 20px 'Overpass', sans-serif;
     text-transform: uppercase;
     letter-spacing: 3px;
+    margin-bottom: 40px;
 
     color: #A93200;
     background: linear-gradient(0deg, #DA9D83 50%, transparent 50%);
